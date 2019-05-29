@@ -111,8 +111,8 @@ export function getKeyboardValueMutator(e) {
 
     case keyCode.END: return (value, props) => props.max;
     case keyCode.HOME: return (value, props) => props.min;
-    case keyCode.PAGE_UP: return (value, props) => value + props.step * 2;
-    case keyCode.PAGE_DOWN: return (value, props) => value - props.step * 2;
+    case keyCode.PAGE_UP: return (value, props) => value + props.step * 5;
+    case keyCode.PAGE_DOWN: return (value, props) => value - props.step * 5;
 
     default: return undefined;
   }
